@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2TO-nB-nsW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="DemoCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-HH-hY2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemoContactCell" rowHeight="86" id="nRW-HH-aq0" customClass="DemoContactCell" customModule="DemoCall" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nRW-HH-aq0" id="JoZ-6V-PGt">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+81 9010 344 744" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I92-UF-QPa">
+                                                    <rect key="frame" x="20" y="53" width="112" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-oL-J8f">
+                                                    <rect key="frame" x="274" y="9" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="0lS-Oy-sdI"/>
+                                                        <constraint firstAttribute="width" constant="30" id="hkL-FY-3dn"/>
+                                                    </constraints>
+                                                    <state key="normal" image="uparrow"/>
+                                                    <connections>
+                                                        <action selector="upListTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIa-8B-OS1"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-0s-soz">
+                                                    <rect key="frame" x="274" y="47" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="FEU-EU-OaK"/>
+                                                        <constraint firstAttribute="width" constant="30" id="mqU-1o-byf"/>
+                                                    </constraints>
+                                                    <state key="normal" image="downarrow"/>
+                                                    <connections>
+                                                        <action selector="downListTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ba7-gz-veM"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="21" text="Contact Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ta-He-X8S">
+                                                    <rect key="frame" x="16" y="16" width="250" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="I92-UF-QPa" firstAttribute="leading" secondItem="JoZ-6V-PGt" secondAttribute="leading" constant="20" id="EzJ-5p-Ek7"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Ta-He-X8S" secondAttribute="trailing" constant="54" id="ITJ-gC-a4B"/>
+                                                <constraint firstAttribute="bottom" secondItem="I92-UF-QPa" secondAttribute="bottom" constant="16" id="Vuy-Tq-xAR"/>
+                                                <constraint firstAttribute="trailing" secondItem="dXY-oL-J8f" secondAttribute="trailing" constant="16" id="YuU-H6-ct7"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gpq-0s-soz" secondAttribute="trailing" constant="16" id="gm8-uP-dvI"/>
+                                                <constraint firstItem="I92-UF-QPa" firstAttribute="top" secondItem="4Ta-He-X8S" secondAttribute="bottom" constant="16" id="jGG-9K-pnN"/>
+                                                <constraint firstItem="4Ta-He-X8S" firstAttribute="leading" secondItem="JoZ-6V-PGt" secondAttribute="leading" constant="16" id="nIf-rm-MmJ"/>
+                                                <constraint firstItem="4Ta-He-X8S" firstAttribute="top" secondItem="JoZ-6V-PGt" secondAttribute="top" constant="16" id="yxl-uW-FyB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="Gpq-0s-soz" firstAttribute="top" secondItem="nRW-HH-aq0" secondAttribute="centerY" constant="4" id="2g4-ni-eut"/>
+                                            <constraint firstItem="dXY-oL-J8f" firstAttribute="bottom" secondItem="nRW-HH-aq0" secondAttribute="centerY" constant="-4" id="gej-W4-I3r"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="btnDownList" destination="Gpq-0s-soz" id="gFK-AZ-Ykv"/>
+                                            <outlet property="btnUpList" destination="dXY-oL-J8f" id="RDd-Iz-PG4"/>
+                                            <outlet property="lblConactName" destination="4Ta-He-X8S" id="bUI-IP-4JU"/>
+                                            <outlet property="lblContactNumber" destination="I92-UF-QPa" id="A3V-oZ-7jc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ms2-17-cWi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IoU-8x-Ond"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N1X-HH-hY2" secondAttribute="trailing" id="Hg1-ov-6E2"/>
+                            <constraint firstItem="N1X-HH-hY2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VM7-YI-1Ne"/>
+                            <constraint firstItem="N1X-HH-hY2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hIz-zT-kjz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N1X-HH-hY2" secondAttribute="bottom" id="kXG-Od-2q5"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="sRz-BR-BKv">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="U0Z-5f-SLa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IPx-eY-8Nn">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Call"/>
+                                <connections>
+                                    <action selector="btnStartCallTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grQ-g4-zFj"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnStartCall" destination="IPx-eY-8Nn" id="Sj4-Co-1BY"/>
+                        <outlet property="mainTbl" destination="N1X-HH-hY2" id="gw2-hC-Lde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="386"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xa7-wR-pIN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2TO-nB-nsW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OVv-4B-42j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xtX-xG-2RU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1h-ig-fAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="386"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="downarrow" width="44" height="44"/>
+        <image name="uparrow" width="44" height="44"/>
+    </resources>
+</document>
